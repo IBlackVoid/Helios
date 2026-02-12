@@ -1,0 +1,11 @@
+# Rust build artifacts
+target/
+
+# Tooling output
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

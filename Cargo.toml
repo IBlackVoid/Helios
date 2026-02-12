@@ -1,0 +1,18 @@
+[package]
+name = "helios"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+bytes = "1"
+rand = "0.8"
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+incremental = true
